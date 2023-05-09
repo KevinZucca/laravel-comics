@@ -1,0 +1,63 @@
+@import '~bootstrap/scss/bootstrap';
+
+// header 
+header {
+    #blue-bar {
+        height: 50px;
+    
+        color: white;
+        background-color: #0282f9;
+
+        #blue-content{
+            height: 100%;
+
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 30px;
+        
+            text-transform: uppercase;
+        }
+    }
+    
+    nav {
+        #nav-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            height: 130px;
+
+            .header-links {
+                text-transform: uppercase;
+                text-decoration: none;
+
+                color: #1c1c1cb7;
+    
+                font-weight: bold;
+            }
+
+           #nav-search {
+            border: none;
+            border-bottom: 1px solid #0282f9;
+
+            color: #1c1c1cb7;
+           }
+
+        }
+    }
+    
+    #jumbo {
+        height: 400px;
+
+        img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+}
+
+// //header
