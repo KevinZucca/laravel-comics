@@ -27,8 +27,25 @@ Route::get('/', function () {
         "shop" => "shop"
     ];
 
+    $cards = config('comics');
 
-    return view('home', compact('headerLinks'));
+
+    $shopLinks = [
+        "digital comics" => "resources/img/images/buy-comics-digital-comics.png",
+        "dc merchandise" => "resources/img/images/buy-comics-merchandise.png",
+        "subscription" => "resources/img/images/buy-comics-subscriptions.png",
+        "comic shop locator" => "resources/img/images/buy-comics-shop-locator.png",
+        "dc power visa" => "resources/img/images/buy-dc-power-visa.svg"
+    ];
+
+    $footerLinks = [
+        "dc comics" => ["Characters", "Comics", "Movies", "TV", "Games", "Videos", "News"],
+        "shop" => ["Shop DC", "Shop DC Colletctibles"],
+        "dc" => ["Terms Of Use", "Privacy Policy (New)", "Ad Choices", "Advertising", "Jobs", "Subscriptions", "Talent Workshops", "CPSC Certificates", "Ratings", "Shop Help", "Contact Us"],
+        "sites" => ["DC", "MAD Magazine", "DC Kids", "DC Universe", "DC Power Visa"]
+    ];
+
+    return view('home', compact('headerLinks', 'cards', 'shopLinks', 'footerLinks'));
 });
 
 Route::get('/comics', function () {

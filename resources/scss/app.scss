@@ -1,5 +1,24 @@
 @import '~bootstrap/scss/bootstrap';
 
+button {
+    transition: scale .2s ease-in;
+
+    &:hover {
+        scale: 1.1;
+    }
+}
+
+.blue-button {
+    background-color: #0282f9;
+    border: none;
+    padding: 8px 30px;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
 // header 
 header {
     #blue-bar {
@@ -61,3 +80,107 @@ header {
 }
 
 // //header
+
+
+
+
+
+// main 
+
+#main-section-container {
+    display: flex;
+    flex-flow: column;
+
+    background-color: #1c1c1c;
+
+    #card-container {
+        padding: 30px;
+
+        display: flex;
+        flex-flow: row wrap;
+        gap: 10px;
+
+        .my-card{
+            padding: 20px;
+            width: calc(100% / 6 - 10px);
+
+            display: flex;
+            flex-flow: column;
+
+            text-transform: uppercase;
+            color: #f8f4f8;
+
+            transition: scale .2s ease-in;
+
+            img {
+                box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.473);
+            }
+
+            &:hover {
+                scale: 1.1;
+            }
+
+            h4 {
+                font-size: .8em;
+                margin-top: 10px;
+            }
+
+            cursor: pointer;
+
+            .comic-img {
+                width: 100%;
+                height: 200px;
+            }
+        }
+    }
+
+    button {
+        margin: 0 auto 100px auto;
+        width: 150px;
+    }
+}
+
+
+#shop-container {
+    height: 150px;
+    background-color: #0282f9;
+
+    #shop-links-container {
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 45px;
+            margin-right: 20px;
+        }
+
+        a {
+            color: white;
+
+            text-transform: uppercase;
+            text-decoration: none;
+            margin-right: 30px;
+        }
+    }
+}
+
+
+
+
+// // main
+
+
+
+
+
+
+
+// footer
+
+#footer-container{
+    background-image: url("/resources/img/images/footer-bg.jpg");
+    background-size: cover;
+}
