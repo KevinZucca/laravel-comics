@@ -8,6 +8,10 @@
                 <h4>{{$singleCard['title']}}</h4>
             </div>
         @endforeach
+
+        <div id="comics-title">
+            <h2>CURRENT SERIES</h2>
+        </div>
     </div>
 
     <button class="blue-button">

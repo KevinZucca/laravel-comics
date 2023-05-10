@@ -2,7 +2,7 @@
   <div id="blue-bar" class="my-container">
     <div id="blue-content" class="container-centered">
       <p>dc power visa</p>
-      <p>additional dc sites</p>
+      <p>additional dc sites  <span><i class="fa-solid fa-chevron-down"></i></span></p>
     </div>
   </div>
 
