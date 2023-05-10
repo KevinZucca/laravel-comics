@@ -39,10 +39,10 @@ Route::get('/', function () {
     ];
 
     $footerLinks = [
-        "dc comics" => ["Characters", "Comics", "Movies", "TV", "Games", "Videos", "News"],
-        "shop" => ["Shop DC", "Shop DC Colletctibles"],
-        "dc" => ["Terms Of Use", "Privacy Policy (New)", "Ad Choices", "Advertising", "Jobs", "Subscriptions", "Talent Workshops", "CPSC Certificates", "Ratings", "Shop Help", "Contact Us"],
-        "sites" => ["DC", "MAD Magazine", "DC Kids", "DC Universe", "DC Power Visa"]
+        ["DC COMICS", "Characters", "Comics", "Movies", "TV", "Games", "Videos", "News"],
+        ["SHOP", "Shop DC", "Shop DC Colletctibles"],
+        ["DC", "Terms Of Use", "Privacy Policy (New)", "Ad Choices", "Advertising", "Jobs", "Subscriptions", "Talent Workshops", "CPSC Certificates", "Ratings", "Shop Help", "Contact Us"],
+        ["SITES", "DC", "MAD Magazine", "DC Kids", "DC Universe", "DC Power Visa"]
     ];
 
     return view('home', compact('headerLinks', 'cards', 'shopLinks', 'footerLinks'));

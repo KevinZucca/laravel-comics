@@ -1,6 +1,6 @@
 <header>
   <div id="blue-bar" class="my-container">
-    <div id="blue-content" class="container">
+    <div id="blue-content" class="container-centered">
       <p>dc power visa</p>
       <p>additional dc sites</p>
     </div>
@@ -9,7 +9,7 @@
 
     {{-- navbar  --}}
     <nav class="my-container">
-      <div id="nav-content" class="container">
+      <div id="nav-content" class="container-centered">
         <a href="/">
           <img src="{{Vite::asset("/resources/img/images/dc-logo.png")}}" alt="big_logo">
         </a>
